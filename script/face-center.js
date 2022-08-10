@@ -1,6 +1,7 @@
 import './face-api.min'
 
 async function cropImage(image) {
+    image.setAttribute('crossorigin', 'anonymous')
     const faces = await faceapi.detectAllFaces(
         image,
         new faceapi.TinyFaceDetectorOptions(),
