@@ -76,6 +76,8 @@ async function cropImage(image) {
             const centered = element.hasAttribute('face-center-cropped');
             if (!centered) {
                 cropImage(element);
+            } else {
+                element.setAttribute('crossorigin', 'anonymous');
             }
         }
     }, true);

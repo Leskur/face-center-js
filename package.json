@@ -1,6 +1,6 @@
 {
   "name": "face-center-js",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "main": "dist/face-center.js",
   "scripts": {
     "build": "rollup script/face-center.js --file dist/face-center.js"
