@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Face Detection On The Web With face-api.js - Image crop</title>
+
+    <link rel="stylesheet" href="style/demo.css"/>
+    <link rel="stylesheet" href="dist/style/index.css">
+    <style>
+        img {
+            display: block;
+        }
+        img::after{
+            content: "123";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+<main>
+    <h1>人脸居中</h1>
+    <div class="input-output">
+        <div class="container" id="container-input"></div>
+        <div class="container" id="container-output"></div>
+    </div>
+    <button id="button-refresh">获取随机图片</button>
+</main>
+<script src="dist/face-center.js"></script>
+<script type="module" src="script/demo.js"></script>
+</body>
+</html>
